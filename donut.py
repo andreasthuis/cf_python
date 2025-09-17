@@ -1,4 +1,5 @@
 import numpy as np
+from time import sleep
 
 screen_size = 40
 theta_spacing = 0.07
@@ -65,3 +66,4 @@ if __name__ == "__main__":
         B += phi_spacing
         print("\x1b[H")
         pprint(render_frame(A, B))
+        sleep(0.05)
